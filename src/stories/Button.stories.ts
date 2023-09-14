@@ -3,7 +3,7 @@ import type { ButtonProps } from './Button';
 import { Button } from './Button';
 
 const meta = {
-  title: 'Example/Button',
+  title: 'Buttons/Button',
   tags: ['autodocs'],
   render: (args) => Button(args),
   argTypes: {

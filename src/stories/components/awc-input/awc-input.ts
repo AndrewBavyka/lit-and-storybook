@@ -2,14 +2,13 @@ import { LitElement, css, html, property } from 'lit-element';
 import { customElement } from 'lit/decorators.js';
 import { classMap } from 'lit-html/directives/class-map.js';
 
-
 @customElement('awc-input')
 
 export class AwcInput extends LitElement {
   @property({ type: String }) name = '';
   @property({ type: String }) color = 'default';
   @property({ type: String }) placeholder = 'Вставьте ссылку';
-  @property({ type: Boolean }) disabled = false;
+  @property({ type: Boolean }) disabled: boolean = false;
 
   protected render() {
     const classes = {

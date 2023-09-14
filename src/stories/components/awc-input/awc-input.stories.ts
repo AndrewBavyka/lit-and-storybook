@@ -2,11 +2,14 @@ import { html } from "lit-element";
 import "./awc-input";
 
 export default {
-  title: "<awc-input>", // Заголовок для Storybook, отображается в боковой панели
+  title: "🧬 Atoms/<awc-input>", // Заголовок для Storybook, отображается в боковой панели. Также указыается путь до вкладки
   component: "awc-input", // Название веб-компонента
-  tags: ["autodocs"], // Теги для создания автодоки
+  tags: ["autodocs"], // Тег для создания автодокc
   argTypes: {
-    name: { control: "text" }, // Настройка контролов для аргументов
+    name: {
+      control: "text",
+      description: "Вывод значения name Input",
+    },
     color: {
       options: {
         Default: "default",
@@ -14,9 +17,16 @@ export default {
         Purple: "purple",
       },
       control: { type: "select" }, // Настройка контрола для выбора из списка
+      description: "Вывод значения цвета Input",
     },
-    placeholder: { control: "text" }, // Настройка контрола для текстового ввода
-    disabled: { control: "boolean" }, // Настройка контрола для булевого значения
+    placeholder: {
+      control: "text", // Настройка контрола для текстового ввода
+      description: "Вввод значения placeholder Input",
+    },
+    disabled: {
+      control: "boolean", // Настройка контрола для булевого значения
+      description: "Отключение поля Input",
+    }, 
   },
   args: {
     name: "input-1", // Начальные значения аргументов для демонстрации
@@ -26,25 +36,18 @@ export default {
   },
 };
 
-// Создание функции компонента Input, которая принимает аргументы
-const Input = ({
-  name,
-  color,
-  placeholder,
-  disabled,
-}: {
+// Создание функции компонента, которая принимает аргументы
+const Input = ({ name, color, placeholder, disabled,}: {
   name: string;
   color: string;
   placeholder: string;
   disabled: boolean;
 }) => {
-  const classNames = `awc-input ${color}`; // Генерация классов для стилизации
-
   // Возвращает разметку с использованием веб-компонента awc-input и переданными аргументами
   return html`
     <awc-input
       name=${name}
-      class=${classNames}
+      class="awc-input ${color}"
       color=${color}
       placeholder=${placeholder}
       ?disabled=${disabled}
@@ -55,4 +58,4 @@ const Input = ({
 
 // Экспорт компонента Default для отображения в Storybook
 // https://storybook.js.org/tutorials/intro-to-storybook/ember/en/simple-component/
-export const Default = Input.bind({});
+export const DefaultInput = Input.bind({});
