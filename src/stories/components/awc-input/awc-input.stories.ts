@@ -6,6 +6,7 @@ export default {
   component: "awc-input", // Название веб-компонента
   tags: ["autodocs"], // Тег для создания автодокc
   argTypes: {
+    сhange: { action: "_handleChange" },
     name: {
       control: "text",
       description: "Вывод значения name Input",
@@ -26,7 +27,7 @@ export default {
     disabled: {
       control: "boolean", // Настройка контрола для булевого значения
       description: "Отключение поля Input",
-    }, 
+    },
   },
   args: {
     name: "input-1", // Начальные значения аргументов для демонстрации
@@ -37,13 +38,17 @@ export default {
 };
 
 // Создание функции компонента, которая принимает аргументы
-const Input = ({ name, color, placeholder, disabled,}: {
+const Input = ({
+  name,
+  color,
+  placeholder,
+  disabled,
+}: {
   name: string;
   color: string;
   placeholder: string;
   disabled: boolean;
 }) => {
-  // Возвращает разметку с использованием веб-компонента awc-input и переданными аргументами
   return html`
     <awc-input
       name=${name}

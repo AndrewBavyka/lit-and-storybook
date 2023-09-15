@@ -1,18 +1,21 @@
-import { LitElement, css, html, property } from 'lit-element';
-import { customElement } from 'lit/decorators.js';
-import { classMap } from 'lit-html/directives/class-map.js';
+import { LitElement, css, html, property } from "lit-element";
+import { customElement } from "lit/decorators.js";
+import { classMap } from "lit-html/directives/class-map.js";
 
-@customElement('awc-input')
-
+@customElement("awc-input")
 export class AwcInput extends LitElement {
-  @property({ type: String }) name = '';
-  @property({ type: String }) color = 'default';
-  @property({ type: String }) placeholder = 'Вставьте ссылку';
+  @property({ type: String }) name = "";
+  @property({ type: String }) color = "default";
+  @property({ type: String }) placeholder = "Вставьте ссылку";
   @property({ type: Boolean }) disabled: boolean = false;
+
+  private _handleChange(e: Event) {
+    console.log(e);
+  }
 
   protected render() {
     const classes = {
-      'awc-input': true,
+      "awc-input": true,
       [this.color]: true,
     };
 
@@ -23,6 +26,7 @@ export class AwcInput extends LitElement {
         name="${this.name}"
         placeholder="${this.placeholder}"
         ?disabled="${this.disabled}"
+        @change=${this._handleChange}
       />
     `;
   }
