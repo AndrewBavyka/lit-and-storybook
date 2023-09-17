@@ -2,8 +2,7 @@
     "hooks": {
         "before:release": "npm test",
         "after:bump": [
-            "npm run build",
-            "npm run deploy"
+            "npm run build"
         ]
     },
     "plugins": {
