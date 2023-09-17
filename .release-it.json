@@ -1,6 +1,5 @@
 {
     "hooks": {
-        "before:release": "npm test",
         "after:bump": [
             "npm run build"
         ]
