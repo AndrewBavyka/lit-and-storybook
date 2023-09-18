@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "tags": [
+    {
+      "name": "awc-input",
+      "description": "Attributes:\n\n  * `name` {`string`} - {String} name - Name of the input element.\n\n  * `color` {`string`} - {String} color - Color of the input element.\n\n  * `placeholder` {`string`} - {String} placeholder - Placeholder text.\n\n  * `disabled` {`boolean`} - {Boolean} disabled - Whether the input element is disabled.\n\nProperties:\n\n  * `name` {`string`} - {String} name - Name of the input element.\n\n  * `color` {`string`} - {String} color - Color of the input element.\n\n  * `placeholder` {`string`} - {String} placeholder - Placeholder text.\n\n  * `disabled` {`boolean`} - {Boolean} disabled - Whether the input element is disabled.\n\n  * `styles` - ",
+      "attributes": [
+        {
+          "name": "name",
+          "description": "`name` {`string`} - {String} name - Name of the input element.\n\nProperty: name\n\nDefault: name"
+        },
+        {
+          "name": "color",
+          "description": "`color` {`string`} - {String} color - Color of the input element.\n\nProperty: color\n\nDefault: default"
+        },
+        {
+          "name": "placeholder",
+          "description": "`placeholder` {`string`} - {String} placeholder - Placeholder text.\n\nProperty: placeholder\n\nDefault: Вставьте ссылку"
+        },
+        {
+          "name": "disabled",
+          "description": "`disabled` {`boolean`} - {Boolean} disabled - Whether the input element is disabled.\n\nProperty: disabled\n\nDefault: false",
+          "valueSet": "v"
+        }
+      ]
+    },
+    {
+      "name": "awc-tab",
+      "description": "Attributes:\n\n  * `tabId` {`string`} - {String} tabId - The ID of the tab.\n\n  * `label` {`string`} - {String} label - The label text displayed on the tab.\n\nProperties:\n\n  * `tabId` {`string`} - {String} tabId - The ID of the tab.\n\n  * `label` {`string`} - {String} label - The label text displayed on the tab.\n\n  * `styles` - ",
+      "attributes": [
+        {
+          "name": "tabId",
+          "description": "`tabId` {`string`} - {String} tabId - The ID of the tab.\n\nProperty: tabId\n\nDefault: id-1"
+        },
+        {
+          "name": "label",
+          "description": "`label` {`string`} - {String} label - The label text displayed on the tab.\n\nProperty: label\n\nDefault: Введите ссылку"
+        }
+      ]
+    }
+  ],
+  "globalAttributes": [],
+  "valueSets": []
+}
