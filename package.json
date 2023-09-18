@@ -1,7 +1,7 @@
 {
   "name": "wc-lit",
   "private": true,
-  "version": "0.1.6",
+  "version": "0.1.7",
   "type": "module",
   "scripts": {
     "prebuild": "node addExports.js && wca analyze 'src/stories/components/**/*.ts' --outFile custom-elements.json",
