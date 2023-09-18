@@ -3,8 +3,15 @@ import { customElement, property } from "lit/decorators.js";
 
 @customElement("awc-tab")
 export class AwcTab extends LitElement {
-  @property({ type: String }) tabId = "";
-  @property({ type: String }) label = "";
+
+  /**
+   * {String} tabId - The ID of the tab. 
+   */
+  @property({ type: String }) tabId = "id-1";
+  /**
+   * {String} label - The label text displayed on the tab.
+   */
+  @property({ type: String }) label = "Введите ссылку";
 
   protected render() {
     return html`

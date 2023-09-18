@@ -661,8 +661,11 @@ var It = Object.defineProperty, Dt = Object.getOwnPropertyDescriptor, H = (n, t,
 };
 let m = class extends b {
   constructor() {
-    super(...arguments), this.name = "", this.color = "default", this.placeholder = "Вставьте ссылку", this.disabled = !1;
+    super(...arguments), this.name = "name", this.color = "default", this.placeholder = "Вставьте ссылку", this.disabled = !1;
   }
+  /**
+   *  change - Dispatched when the input value changes.
+   */
   _handleChange(n) {
     console.log(n);
   }
@@ -730,7 +733,7 @@ var Bt = Object.defineProperty, zt = Object.getOwnPropertyDescriptor, F = (n, t,
 };
 let U = class extends b {
   constructor() {
-    super(...arguments), this.tabId = "", this.label = "";
+    super(...arguments), this.tabId = "id-1", this.label = "Введите ссылку";
   }
   render() {
     return vt`

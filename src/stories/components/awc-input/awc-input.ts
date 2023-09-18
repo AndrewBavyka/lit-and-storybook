@@ -4,10 +4,26 @@ import { classMap } from "lit-html/directives/class-map.js";
 
 @customElement("awc-input")
 export class AwcInput extends LitElement {
-  @property({ type: String }) name = "";
+  /**
+   * {String} name - Name of the input element.
+   */
+  @property({ type: String }) name = "name";
+  /**
+   * {String} color - Color of the input element.
+   */
   @property({ type: String }) color = "default";
+  /**
+   * {String} placeholder - Placeholder text.
+   */
   @property({ type: String }) placeholder = "Вставьте ссылку";
+  /**
+   * {Boolean} disabled - Whether the input element is disabled.
+   */
   @property({ type: Boolean }) disabled: boolean = false;
+
+  /**
+   *  change - Dispatched when the input value changes.
+   */
 
   private _handleChange(e: Event) {
     console.log(e);
