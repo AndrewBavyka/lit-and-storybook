@@ -1,159 +1,107 @@
 {
   "version": "experimental",
-  "modules": [
+  "tags": [
     {
-      "path": "./src/stories/components/awc-input/awc-input.ts",
-      "exports": [
+      "name": "awc-input",
+      "path": "./src\\stories\\components\\awc-input\\awc-input.ts",
+      "attributes": [
         {
-          "kind": "definition",
-          "name": "awc-input",
-          "declaration": {
-            "name": "AwcInput",
-            "module": "./src/stories/components/awc-input/awc-input.ts"
-          }
+          "name": "name",
+          "description": "{String} name - Name of the input element.",
+          "type": "string",
+          "default": "\"name\""
         },
         {
-          "kind": "class",
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit-element"
-          },
-          "name": "AwcInput",
-          "members": [
-            {
-              "kind": "field",
-              "name": "name",
-              "privacy": "public",
-              "description": "{String} name - Name of the input element.",
-              "type": "string",
-              "default": "\"name\""
-            },
-            {
-              "kind": "field",
-              "name": "color",
-              "privacy": "public",
-              "description": "{String} color - Color of the input element.",
-              "type": "string",
-              "default": "\"default\""
-            },
-            {
-              "kind": "field",
-              "name": "placeholder",
-              "privacy": "public",
-              "description": "{String} placeholder - Placeholder text.",
-              "type": "string",
-              "default": "\"Вставьте ссылку\""
-            },
-            {
-              "kind": "field",
-              "name": "disabled",
-              "privacy": "public",
-              "description": "{Boolean} disabled - Whether the input element is disabled.",
-              "type": "boolean",
-              "default": "false"
-            },
-            {
-              "kind": "field",
-              "name": "styles",
-              "privacy": "public",
-              "type": "CSSResult",
-              "default": "\"css`\\n    .awc-input {\\n      padding: 13px 0 13px 16px;\\n      border-radius: 5px;\\n      border: 1px solid var(--secondary-text);\\n      color: var(--black-text);\\n    }\\n    .awc-input:focus-visible {\\n      outline: 1px solid var(--secondary-text);\\n      background: white;\\n    }\\n    .awc-input:disabled {\\n      opacity: 0.4;\\n      background: var(--input-background);\\n    }\\n    .default {\\n      background: var(--input-background);\\n    }\\n    .red {\\n      background: red;\\n    }\\n    .purple {\\n      background: purple;\\n    }\\n  `\""
-            }
-          ],
-          "tagName": "awc-input",
-          "attributes": [
-            {
-              "name": "name",
-              "fieldName": "name",
-              "defaultValue": "\"name\"",
-              "description": "{String} name - Name of the input element.",
-              "type": "string"
-            },
-            {
-              "name": "color",
-              "fieldName": "color",
-              "defaultValue": "\"default\"",
-              "description": "{String} color - Color of the input element.",
-              "type": "string"
-            },
-            {
-              "name": "placeholder",
-              "fieldName": "placeholder",
-              "defaultValue": "\"Вставьте ссылку\"",
-              "description": "{String} placeholder - Placeholder text.",
-              "type": "string"
-            },
-            {
-              "name": "disabled",
-              "fieldName": "disabled",
-              "defaultValue": "false",
-              "description": "{Boolean} disabled - Whether the input element is disabled.",
-              "type": "boolean"
-            }
-          ]
+          "name": "color",
+          "description": "{String} color - Color of the input element.",
+          "type": "string",
+          "default": "\"default\""
+        },
+        {
+          "name": "placeholder",
+          "description": "{String} placeholder - Placeholder text.",
+          "type": "string",
+          "default": "\"Вставьте ссылку\""
+        },
+        {
+          "name": "disabled",
+          "description": "{Boolean} disabled - Whether the input element is disabled.",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "description": "{String} name - Name of the input element.",
+          "type": "string",
+          "default": "\"name\""
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "description": "{String} color - Color of the input element.",
+          "type": "string",
+          "default": "\"default\""
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "description": "{String} placeholder - Placeholder text.",
+          "type": "string",
+          "default": "\"Вставьте ссылку\""
+        },
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "description": "{Boolean} disabled - Whether the input element is disabled.",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\r\\n    .awc-input {\\r\\n      padding: 13px 0 13px 16px;\\r\\n      border-radius: 5px;\\r\\n      border: 1px solid var(--secondary-text);\\r\\n      color: var(--black-text);\\r\\n    }\\r\\n    .awc-input:focus-visible {\\r\\n      outline: 1px solid var(--secondary-text);\\r\\n      background: white;\\r\\n    }\\r\\n    .awc-input:disabled {\\r\\n      opacity: 0.4;\\r\\n      background: var(--input-background);\\r\\n    }\\r\\n    .default {\\r\\n      background: var(--input-background);\\r\\n    }\\r\\n    .red {\\r\\n      background: red;\\r\\n    }\\r\\n    .purple {\\r\\n      background: purple;\\r\\n    }\\r\\n  `\""
         }
       ]
     },
     {
-      "path": "./src/stories/components/awc-tab/awc-tab.ts",
-      "exports": [
+      "name": "awc-tab",
+      "path": "./src\\stories\\components\\awc-tab\\awc-tab.ts",
+      "attributes": [
         {
-          "kind": "definition",
-          "name": "awc-tab",
-          "declaration": {
-            "name": "AwcTab",
-            "module": "./src/stories/components/awc-tab/awc-tab.ts"
-          }
+          "name": "tabId",
+          "description": "{String} tabId - The ID of the tab.",
+          "type": "string",
+          "default": "\"id-1\""
         },
         {
-          "kind": "class",
-          "superclass": {
-            "name": "LitElement",
-            "package": "lit-element"
-          },
-          "name": "AwcTab",
-          "members": [
-            {
-              "kind": "field",
-              "name": "tabId",
-              "privacy": "public",
-              "description": "{String} tabId - The ID of the tab.",
-              "type": "string",
-              "default": "\"id-1\""
-            },
-            {
-              "kind": "field",
-              "name": "label",
-              "privacy": "public",
-              "description": "{String} label - The label text displayed on the tab.",
-              "type": "string",
-              "default": "\"Введите ссылку\""
-            },
-            {
-              "kind": "field",
-              "name": "styles",
-              "privacy": "public",
-              "type": "CSSResult",
-              "default": "\"css`\\n    .awc-tab {\\n      cursor: pointer;\\n      max-width: max-content;\\n      position: relative;\\n      border-radius: 5px;\\n      color: var(--secondary-text);\\n    }\\n    .awc-tab:hover {\\n      transition: color 0.3s;\\n      color: var(--black-text);\\n    }\\n\\n    .awc-tab:hover .underline {\\n      width: 100%;\\n    }\\n    .underline {\\n      width: 0;\\n      height: 2px;\\n      background-color: var(--base-color);\\n      position: absolute;\\n      bottom: -12px;\\n      left: 0;\\n      transition: width 0.3s ease-in-out;\\n    }\\n  `\""
-            }
-          ],
-          "tagName": "awc-tab",
-          "attributes": [
-            {
-              "name": "tabId",
-              "fieldName": "tabId",
-              "defaultValue": "\"id-1\"",
-              "description": "{String} tabId - The ID of the tab.",
-              "type": "string"
-            },
-            {
-              "name": "label",
-              "fieldName": "label",
-              "defaultValue": "\"Введите ссылку\"",
-              "description": "{String} label - The label text displayed on the tab.",
-              "type": "string"
-            }
-          ]
+          "name": "label",
+          "description": "{String} label - The label text displayed on the tab.",
+          "type": "string",
+          "default": "\"Введите ссылку\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "tabId",
+          "attribute": "tabId",
+          "description": "{String} tabId - The ID of the tab.",
+          "type": "string",
+          "default": "\"id-1\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "description": "{String} label - The label text displayed on the tab.",
+          "type": "string",
+          "default": "\"Введите ссылку\""
+        },
+        {
+          "name": "styles",
+          "type": "CSSResult",
+          "default": "\"css`\\r\\n    .awc-tab {\\r\\n      cursor: pointer;\\r\\n      max-width: max-content;\\r\\n      position: relative;\\r\\n      border-radius: 5px;\\r\\n      color: var(--secondary-text);\\r\\n    }\\r\\n    .awc-tab:hover {\\r\\n      transition: color 0.3s;\\r\\n      color: var(--black-text);\\r\\n    }\\r\\n\\r\\n    .awc-tab:hover .underline {\\r\\n      width: 100%;\\r\\n    }\\r\\n    .underline {\\r\\n      width: 0;\\r\\n      height: 2px;\\r\\n      background-color: var(--base-color);\\r\\n      position: absolute;\\r\\n      bottom: -12px;\\r\\n      left: 0;\\r\\n      transition: width 0.3s ease-in-out;\\r\\n    }\\r\\n  `\""
         }
       ]
     }
