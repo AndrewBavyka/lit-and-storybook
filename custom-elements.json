@@ -1,0 +1,161 @@
+{
+  "version": "experimental",
+  "modules": [
+    {
+      "path": "./src/stories/components/awc-input/awc-input.ts",
+      "exports": [
+        {
+          "kind": "definition",
+          "name": "awc-input",
+          "declaration": {
+            "name": "AwcInput",
+            "module": "./src/stories/components/awc-input/awc-input.ts"
+          }
+        },
+        {
+          "kind": "class",
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit-element"
+          },
+          "name": "AwcInput",
+          "members": [
+            {
+              "kind": "field",
+              "name": "name",
+              "privacy": "public",
+              "description": "{String} name - Name of the input element.",
+              "type": "string",
+              "default": "\"name\""
+            },
+            {
+              "kind": "field",
+              "name": "color",
+              "privacy": "public",
+              "description": "{String} color - Color of the input element.",
+              "type": "string",
+              "default": "\"default\""
+            },
+            {
+              "kind": "field",
+              "name": "placeholder",
+              "privacy": "public",
+              "description": "{String} placeholder - Placeholder text.",
+              "type": "string",
+              "default": "\"Вставьте ссылку\""
+            },
+            {
+              "kind": "field",
+              "name": "disabled",
+              "privacy": "public",
+              "description": "{Boolean} disabled - Whether the input element is disabled.",
+              "type": "boolean",
+              "default": "false"
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "privacy": "public",
+              "type": "CSSResult",
+              "default": "\"css`\\n    .awc-input {\\n      padding: 13px 0 13px 16px;\\n      border-radius: 5px;\\n      border: 1px solid var(--secondary-text);\\n      color: var(--black-text);\\n    }\\n    .awc-input:focus-visible {\\n      outline: 1px solid var(--secondary-text);\\n      background: white;\\n    }\\n    .awc-input:disabled {\\n      opacity: 0.4;\\n      background: var(--input-background);\\n    }\\n    .default {\\n      background: var(--input-background);\\n    }\\n    .red {\\n      background: red;\\n    }\\n    .purple {\\n      background: purple;\\n    }\\n  `\""
+            }
+          ],
+          "tagName": "awc-input",
+          "attributes": [
+            {
+              "name": "name",
+              "fieldName": "name",
+              "defaultValue": "\"name\"",
+              "description": "{String} name - Name of the input element.",
+              "type": "string"
+            },
+            {
+              "name": "color",
+              "fieldName": "color",
+              "defaultValue": "\"default\"",
+              "description": "{String} color - Color of the input element.",
+              "type": "string"
+            },
+            {
+              "name": "placeholder",
+              "fieldName": "placeholder",
+              "defaultValue": "\"Вставьте ссылку\"",
+              "description": "{String} placeholder - Placeholder text.",
+              "type": "string"
+            },
+            {
+              "name": "disabled",
+              "fieldName": "disabled",
+              "defaultValue": "false",
+              "description": "{Boolean} disabled - Whether the input element is disabled.",
+              "type": "boolean"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "./src/stories/components/awc-tab/awc-tab.ts",
+      "exports": [
+        {
+          "kind": "definition",
+          "name": "awc-tab",
+          "declaration": {
+            "name": "AwcTab",
+            "module": "./src/stories/components/awc-tab/awc-tab.ts"
+          }
+        },
+        {
+          "kind": "class",
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit-element"
+          },
+          "name": "AwcTab",
+          "members": [
+            {
+              "kind": "field",
+              "name": "tabId",
+              "privacy": "public",
+              "description": "{String} tabId - The ID of the tab.",
+              "type": "string",
+              "default": "\"id-1\""
+            },
+            {
+              "kind": "field",
+              "name": "label",
+              "privacy": "public",
+              "description": "{String} label - The label text displayed on the tab.",
+              "type": "string",
+              "default": "\"Введите ссылку\""
+            },
+            {
+              "kind": "field",
+              "name": "styles",
+              "privacy": "public",
+              "type": "CSSResult",
+              "default": "\"css`\\n    .awc-tab {\\n      cursor: pointer;\\n      max-width: max-content;\\n      position: relative;\\n      border-radius: 5px;\\n      color: var(--secondary-text);\\n    }\\n    .awc-tab:hover {\\n      transition: color 0.3s;\\n      color: var(--black-text);\\n    }\\n\\n    .awc-tab:hover .underline {\\n      width: 100%;\\n    }\\n    .underline {\\n      width: 0;\\n      height: 2px;\\n      background-color: var(--base-color);\\n      position: absolute;\\n      bottom: -12px;\\n      left: 0;\\n      transition: width 0.3s ease-in-out;\\n    }\\n  `\""
+            }
+          ],
+          "tagName": "awc-tab",
+          "attributes": [
+            {
+              "name": "tabId",
+              "fieldName": "tabId",
+              "defaultValue": "\"id-1\"",
+              "description": "{String} tabId - The ID of the tab.",
+              "type": "string"
+            },
+            {
+              "name": "label",
+              "fieldName": "label",
+              "defaultValue": "\"Введите ссылку\"",
+              "description": "{String} label - The label text displayed on the tab.",
+              "type": "string"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

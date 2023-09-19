@@ -1,4 +1,6 @@
-import type { Preview } from "@storybook/web-components";
+import type { Preview } from "@storybook/web-components"
+import customElements from '../custom-elements.json'
+
 import '../src/global.css'
 
 const preview: Preview = {

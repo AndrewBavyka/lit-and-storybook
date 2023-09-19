@@ -1,0 +1,250 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JetBrains/web-types/master/schema/web-types.json",
+    "name": "lit-and-storybook",
+    "version": "0.1.7",
+    "framework": "lit",
+    "description-markup": "markdown",
+    "contributions": {
+        "html": {
+            "elements": [
+                {
+                    "name": "awc-input",
+                    "source": {
+                        "module": "./src/stories/components/awc-input/awc-input.ts",
+                        "symbol": "AwcInput"
+                    },
+                    "attributes": [
+                        {
+                            "name": "name",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "string",
+                                "required": true,
+                                "default": "\"name\""
+                            },
+                            "description": "{String} name - Name of the input element.",
+                            "source": {
+                                "module": "./src/stories/components/awc-input/awc-input.ts",
+                                "symbol": "AwcInput.name"
+                            }
+                        },
+                        {
+                            "name": "color",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "string",
+                                "required": true,
+                                "default": "\"default\""
+                            },
+                            "description": "{String} color - Color of the input element.",
+                            "source": {
+                                "module": "./src/stories/components/awc-input/awc-input.ts",
+                                "symbol": "AwcInput.color"
+                            }
+                        },
+                        {
+                            "name": "placeholder",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "string",
+                                "required": true,
+                                "default": "\"Вставьте ссылку\""
+                            },
+                            "description": "{String} placeholder - Placeholder text.",
+                            "source": {
+                                "module": "./src/stories/components/awc-input/awc-input.ts",
+                                "symbol": "AwcInput.placeholder"
+                            }
+                        },
+                        {
+                            "name": "disabled",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "boolean",
+                                "required": false,
+                                "default": "false"
+                            },
+                            "description": "{Boolean} disabled - Whether the input element is disabled.",
+                            "source": {
+                                "module": "./src/stories/components/awc-input/awc-input.ts",
+                                "symbol": "AwcInput.disabled"
+                            }
+                        }
+                    ],
+                    "js": {
+                        "properties": [
+                            {
+                                "name": "name",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "\"name\""
+                                },
+                                "description": "{String} name - Name of the input element.",
+                                "source": {
+                                    "module": "./src/stories/components/awc-input/awc-input.ts",
+                                    "symbol": "AwcInput.name"
+                                }
+                            },
+                            {
+                                "name": "color",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "\"default\""
+                                },
+                                "description": "{String} color - Color of the input element.",
+                                "source": {
+                                    "module": "./src/stories/components/awc-input/awc-input.ts",
+                                    "symbol": "AwcInput.color"
+                                }
+                            },
+                            {
+                                "name": "placeholder",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "\"Вставьте ссылку\""
+                                },
+                                "description": "{String} placeholder - Placeholder text.",
+                                "source": {
+                                    "module": "./src/stories/components/awc-input/awc-input.ts",
+                                    "symbol": "AwcInput.placeholder"
+                                }
+                            },
+                            {
+                                "name": "disabled",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "boolean",
+                                    "required": false,
+                                    "default": "false"
+                                },
+                                "description": "{Boolean} disabled - Whether the input element is disabled.",
+                                "source": {
+                                    "module": "./src/stories/components/awc-input/awc-input.ts",
+                                    "symbol": "AwcInput.disabled"
+                                }
+                            },
+                            {
+                                "name": "styles",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "CSSResult",
+                                    "required": true,
+                                    "default": "\"css`\\n    .awc-input {\\n      padding: 13px 0 13px 16px;\\n      border-radius: 5px;\\n      border: 1px solid var(--secondary-text);\\n      color: var(--black-text);\\n    }\\n    .awc-input:focus-visible {\\n      outline: 1px solid var(--secondary-text);\\n      background: white;\\n    }\\n    .awc-input:disabled {\\n      opacity: 0.4;\\n      background: var(--input-background);\\n    }\\n    .default {\\n      background: var(--input-background);\\n    }\\n    .red {\\n      background: red;\\n    }\\n    .purple {\\n      background: purple;\\n    }\\n  `\""
+                                },
+                                "source": {
+                                    "module": "./src/stories/components/awc-input/awc-input.ts",
+                                    "symbol": "AwcInput.styles"
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "awc-tab",
+                    "source": {
+                        "module": "./src/stories/components/awc-tab/awc-tab.ts",
+                        "symbol": "AwcTab"
+                    },
+                    "attributes": [
+                        {
+                            "name": "tabId",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "string",
+                                "required": true,
+                                "default": "\"id-1\""
+                            },
+                            "description": "{String} tabId - The ID of the tab.",
+                            "source": {
+                                "module": "./src/stories/components/awc-tab/awc-tab.ts",
+                                "symbol": "AwcTab.tabId"
+                            }
+                        },
+                        {
+                            "name": "label",
+                            "required": false,
+                            "priority": "normal",
+                            "value": {
+                                "type": "string",
+                                "required": true,
+                                "default": "\"Введите ссылку\""
+                            },
+                            "description": "{String} label - The label text displayed on the tab.",
+                            "source": {
+                                "module": "./src/stories/components/awc-tab/awc-tab.ts",
+                                "symbol": "AwcTab.label"
+                            }
+                        }
+                    ],
+                    "js": {
+                        "properties": [
+                            {
+                                "name": "tabId",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "\"id-1\""
+                                },
+                                "description": "{String} tabId - The ID of the tab.",
+                                "source": {
+                                    "module": "./src/stories/components/awc-tab/awc-tab.ts",
+                                    "symbol": "AwcTab.tabId"
+                                }
+                            },
+                            {
+                                "name": "label",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "string",
+                                    "required": true,
+                                    "default": "\"Введите ссылку\""
+                                },
+                                "description": "{String} label - The label text displayed on the tab.",
+                                "source": {
+                                    "module": "./src/stories/components/awc-tab/awc-tab.ts",
+                                    "symbol": "AwcTab.label"
+                                }
+                            },
+                            {
+                                "name": "styles",
+                                "required": false,
+                                "priority": "normal",
+                                "value": {
+                                    "type": "CSSResult",
+                                    "required": true,
+                                    "default": "\"css`\\n    .awc-tab {\\n      cursor: pointer;\\n      max-width: max-content;\\n      position: relative;\\n      border-radius: 5px;\\n      color: var(--secondary-text);\\n    }\\n    .awc-tab:hover {\\n      transition: color 0.3s;\\n      color: var(--black-text);\\n    }\\n\\n    .awc-tab:hover .underline {\\n      width: 100%;\\n    }\\n    .underline {\\n      width: 0;\\n      height: 2px;\\n      background-color: var(--base-color);\\n      position: absolute;\\n      bottom: -12px;\\n      left: 0;\\n      transition: width 0.3s ease-in-out;\\n    }\\n  `\""
+                                },
+                                "source": {
+                                    "module": "./src/stories/components/awc-tab/awc-tab.ts",
+                                    "symbol": "AwcTab.styles"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "css": {
+            "properties": []
+        }
+    }
+}

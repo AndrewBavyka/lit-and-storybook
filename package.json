@@ -12,9 +12,11 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "build-storybook-docs": "storybook build --docs",
-    "analyze": "wca analyze 'src/stories/components/**/*.ts' --outFile custom-elements.json",
+    "analyze": "wca analyze 'src/stories/components/**/*.ts' --outFile custom-elements.json --format json2",
     "analyze-m": "wca analyze 'src/stories/components/**/*.ts' --format markdown --outDir readme",
-    "analyze-vs": "wca analyze  'src/stories/components/**/*.ts' --format vscode --outFile vscode-html-custom-data.json"
+    "analyze-vs": "wca analyze 'src/stories/components/**/*.ts' --format vscode --outFile vscode-html-custom-data.json",
+    "analyze-jb": "node addWebTypes.js",
+    "analyze-wt": "wca-webtypes wca analyze 'src/stories/components/**/*.ts' --outFile web-types.json --format webtypes"
   },
   "dependencies": {
     "@storybook/addon-actions": "^7.4.2",
@@ -29,11 +31,22 @@
     "@storybook/blocks": "^7.4.2",
     "@storybook/web-components": "^7.4.2",
     "@storybook/web-components-vite": "^7.4.2",
+    "@web-types/lit": "^2.0.0-3",
+    "custom-element-jet-brains-integration": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "release-it": "^16.1.5",
     "storybook": "^7.4.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "web-types": "./web-types.json",
+  "wca": {
+    "webtypesConfig": {
+      "name": "lit-and-storybook",
+      "version": "0.0.1",
+      "framework": "lit",
+      "description-markup": "markdown"
+    }
   }
 }
